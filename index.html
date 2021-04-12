@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html>
     <head>
         <title>david's journal</title>
         <meta name="author" content="David Cao">
@@ -27,7 +27,7 @@
             <section>
                 <h2>top 3 things i did today</h2>
                 <h3>fun stuff happened! <span>date: 4/11/21</span></h3>
-                <div id="content">
+                <div class="content">
                     <ol>
                         <li>went to grab food at crack shack! (the chicken is ok)</li>
                         <li>took pictures in balboa park</li>
@@ -39,11 +39,71 @@
             <section>
                 <h2>my favorite memes</h2>
                 <h3>these memes slap. <span>date: 4/10/21</span></h3>
-                <div id="content">
+                <div class="content">
                     <details>
                         <summary>kirby holding a knife</summary>
-                        <img src="kirby.jpg">
+                        <img src="kirby.jpg" alt="kirby with a knife!">
                     </details>
+                    <details>
+                        <summary>audio meme</summary>
+                        <audio controls autoplay>
+                            <source src="Yee.mp3" type="audio/mpeg">
+                        </audio>
+                    </details>
+                    <details>
+                        <summary>video meme</summary>
+                        <video width="320" height="240">
+                            <source src="Yee.mp4" type="video/mp4">
+                        </video>
+                    </details>
+                </div>
+            </section>
+            <br />
+            <section>
+                <h2>feedback form</h2>
+                <h3>for feedback on my journal! <span>date: 4/9/21</span></h3>
+                <div class="content">
+                    <p>this is a form for sending feedback about this blog!</p>
+                    <form id="frm">
+                        <fieldset>
+                            <legend>Personal info</legend>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name"><br />
+                            <label for="bday">Birthday</label>
+                            <input type="date" id="bday" name="bday"><br />
+                            <p>Year:</p>
+                            <input type="radio" name="year" id="first" name="first">
+                            <label for="first">1st year</label><br />
+                            <input type="radio" name="year" id="second" name="second">
+                            <label for="second">2nd year</label><br />
+                            <input type="radio" name="year" id="third" name="third">
+                            <label for="third">3rd year</label><br />
+                            <input type="radio" name="year" id="fourth" name="fourth">
+                            <label for="fourth">4th year</label><br />
+                            <input type="submit" value="Submit">
+                            <p>Can you drive?</p>
+                            <select id="drive" name="drive" form="frm">
+                                <option value="y">yes</option>
+                                <option value="n">no</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Feedback</legend>
+                            <p>Type of feedback:</p>
+                            <datalist id="typ">
+                                <option value="critique">
+                                <option value="comment">
+                                <option value="affirmation">
+                                <option value="other">
+                            </datalist>
+                            <textarea name="fb" form="frm">Enter feedback here...</textarea>
+                        </fieldset>
+
+                        <label for="robot">Check this box to prove you're not a robot</label>
+                        <input type="checkbox" id="robot" name="robot"><br />
+                        <button type="submit" form="frm" value="submit">submit</button>
+                    </form>
                 </div>
             </section>
         </main>
