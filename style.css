@@ -13,7 +13,7 @@ html {
     left: 60%;
 }
 
-.h, #welcome {
+.h, b#welcome {
     width: 50%;
     height: 50%;
     margin-left: auto;
@@ -51,4 +51,32 @@ a:active {
     body {
         background-color: rgb(173, 216, 230);
     }
+}
+
+/* For body */
+section {
+    max-width: 920px;
+    min-width: 720px;
+    margin: auto;
+}
+
+h2 + h3 {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+}
+
+h2 ~ div.content {
+    border-width: 1px;
+    border-style: dotted;
+}
+
+section #meme-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    column-gap: 0.5em;
+    row-gap: 0.5em;
 }
