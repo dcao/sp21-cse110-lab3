@@ -1,0 +1,54 @@
+/* Set font */
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+html {
+    font-family: 'Fira Sans', sans-serif;
+    padding: 8px;
+}
+
+.header {
+    position: absolute;
+    left: 60%;
+}
+
+.h, #welcome {
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2px;
+    margin-bottom: 4cm;
+}
+
+#welcome {
+    position: static;
+}
+
+a[href="https://cao.sh"] {
+    margin: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 16px;
+}
+
+a:hover {
+    display: inline-block;
+    border-style: solid;
+    border-color: hsl(300, 100%, 25%);
+    border-width: 1vw;
+    border-radius: 0.5em;
+    margin: auto;
+}
+
+a:active {
+    display: none;
+}
+
+@media only screen and (max-width: 8in) {
+    body {
+        background-color: rgb(173, 216, 230);
+    }
+}

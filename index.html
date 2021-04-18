@@ -6,18 +6,33 @@
         <link rel="icon" 
               type="image/png" 
               href="https://ichef.bbci.co.uk/news/1024/cpsprodpb/43D8/production/_111686371_pic1.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet"
+              href="style.css">
     </head>
+    <style>
+        /* This styles the top nav list */
+        header > nav {
+            color: red;
+        }
+
+        /* Styles all ordered lists */
+        ol {
+            color: rgb(0,0,255);
+        }
+    </style>
     <body>
-        <header>
-            <h1>david's journal</h1>
+        <header class="h">
+            <h1 style="color: red; text-decoration: underline; text-align: center;">david's journal</h1>
             <nav>
                 <ul>
                     <li><a href="https://cao.sh">my actual website</a></li>
                     <li><i>more coming soon...</i></li>
                 </ul>
             </nav>
-            <p>
-                <b>welcome to my journal!</b> this is where i write and stuff.
+            <p class="header">
+                <b id="welcome">welcome to my journal!</b> this is where i write and stuff.
                 <br />
                 this website was made for <strong>cse 110</strong>.
             </p>
